@@ -85,5 +85,10 @@ export class AccountController {
         
             }
     }
+    //Привязывает QR-код к аккаунту
+    @Patch('qrs/:id')
+    async bindQr (@Param() param: any ,@Body() body: EditAccountResponse) {
+       
+    }
 
 }
